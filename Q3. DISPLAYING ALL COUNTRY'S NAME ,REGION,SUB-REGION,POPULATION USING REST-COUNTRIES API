@@ -1,0 +1,1278 @@
+ 
+        "DISPLAYING ALL CONTRY'S NAME , REGION , SUB-REGION AND POPULATION USING REST-COUNTRIES API"
+		
+let restcountries = new XMLHttpRequest();
+restcountries.open("GET", "https://restcountries.com/v2/all");
+restcountries.onload = function () {
+    if (restcountries.status >= 200 && restcountries.status < 300) {
+    var t = JSON.parse(this.response);
+    for(i=0;i<t.length;i++){
+       console.log(`
+       country : ${t[i].name}
+       region : ${t[i].region}
+       subregion : ${t[i].subregion}
+       population : ${t[i].population}`);
+    }
+  } else {
+    console.log("Data is not available");
+  }
+};
+
+restcountries.send();
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+       //EXECUTED IN MICROSOFT EDGE
+OUTPUT :
+
+javascript.js:7 
+       country : Afghanistan
+       region : Asia
+       subregion : Southern Asia
+       population : 38928341
+javascript.js:7 
+       country : Åland Islands
+       region : Europe
+       subregion : Northern Europe
+       population : 28875
+javascript.js:7 
+       country : Albania
+       region : Europe
+       subregion : Southern Europe
+       population : 2837743
+javascript.js:7 
+       country : Algeria
+       region : Africa
+       subregion : Northern Africa
+       population : 43851043
+javascript.js:7 
+       country : American Samoa
+       region : Oceania
+       subregion : Polynesia
+       population : 55197
+javascript.js:7 
+       country : Andorra
+       region : Europe
+       subregion : Southern Europe
+       population : 77265
+javascript.js:7 
+       country : Angola
+       region : Africa
+       subregion : Middle Africa
+       population : 32866268
+javascript.js:7 
+       country : Anguilla
+       region : Americas
+       subregion : Caribbean
+       population : 13452
+javascript.js:7 
+       country : Antarctica
+       region : Polar
+       subregion : Antarctica
+       population : 1000
+javascript.js:7 
+       country : Antigua and Barbuda
+       region : Americas
+       subregion : Caribbean
+       population : 97928
+javascript.js:7 
+       country : Argentina
+       region : Americas
+       subregion : South America
+       population : 45376763
+javascript.js:7 
+       country : Armenia
+       region : Asia
+       subregion : Western Asia
+       population : 2963234
+javascript.js:7 
+       country : Aruba
+       region : Americas
+       subregion : Caribbean
+       population : 106766
+javascript.js:7 
+       country : Australia
+       region : Oceania
+       subregion : Australia and New Zealand
+       population : 25687041
+javascript.js:7 
+       country : Austria
+       region : Europe
+       subregion : Central Europe
+       population : 8917205
+javascript.js:7 
+       country : Azerbaijan
+       region : Asia
+       subregion : Western Asia
+       population : 10110116
+javascript.js:7 
+       country : Bahamas
+       region : Americas
+       subregion : Caribbean
+       population : 393248
+javascript.js:7 
+       country : Bahrain
+       region : Asia
+       subregion : Western Asia
+       population : 1701583
+javascript.js:7 
+       country : Bangladesh
+       region : Asia
+       subregion : Southern Asia
+       population : 164689383
+javascript.js:7 
+       country : Barbados
+       region : Americas
+       subregion : Caribbean
+       population : 287371
+javascript.js:7 
+       country : Belarus
+       region : Europe
+       subregion : Eastern Europe
+       population : 9398861
+javascript.js:7 
+       country : Belgium
+       region : Europe
+       subregion : Western Europe
+       population : 11555997
+javascript.js:7 
+       country : Belize
+       region : Americas
+       subregion : Central America
+       population : 397621
+javascript.js:7 
+       country : Benin
+       region : Africa
+       subregion : Western Africa
+       population : 12123198
+javascript.js:7 
+       country : Bermuda
+       region : Americas
+       subregion : Northern America
+       population : 63903
+javascript.js:7 
+       country : Bhutan
+       region : Asia
+       subregion : Southern Asia
+       population : 771612
+javascript.js:7 
+       country : Bolivia (Plurinational State of)
+       region : Americas
+       subregion : South America
+       population : 11673029
+javascript.js:7 
+       country : Bonaire, Sint Eustatius and Saba
+       region : Americas
+       subregion : Caribbean
+       population : 17408
+javascript.js:7 
+       country : Bosnia and Herzegovina
+       region : Europe
+       subregion : Southern Europe
+       population : 3280815
+javascript.js:7 
+       country : Botswana
+       region : Africa
+       subregion : Southern Africa
+       population : 2351625
+javascript.js:7 
+       country : Bouvet Island
+       region : Antarctic Ocean
+       subregion : South Antarctic Ocean
+       population : 0
+javascript.js:7 
+       country : Brazil
+       region : Americas
+       subregion : South America
+       population : 212559409
+javascript.js:7 
+       country : British Indian Ocean Territory
+       region : Africa
+       subregion : Eastern Africa
+       population : 3000
+javascript.js:7 
+       country : United States Minor Outlying Islands
+       region : Americas
+       subregion : Northern America
+       population : 300
+javascript.js:7 
+       country : Virgin Islands (British)
+       region : Americas
+       subregion : Caribbean
+       population : 30237
+javascript.js:7 
+       country : Virgin Islands (U.S.)
+       region : Americas
+       subregion : Caribbean
+       population : 106290
+javascript.js:7 
+       country : Brunei Darussalam
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 437483
+javascript.js:7 
+       country : Bulgaria
+       region : Europe
+       subregion : Eastern Europe
+       population : 6927288
+javascript.js:7 
+       country : Burkina Faso
+       region : Africa
+       subregion : Western Africa
+       population : 20903278
+javascript.js:7 
+       country : Burundi
+       region : Africa
+       subregion : Eastern Africa
+       population : 11890781
+javascript.js:7 
+       country : Cambodia
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 16718971
+javascript.js:7 
+       country : Cameroon
+       region : Africa
+       subregion : Middle Africa
+       population : 26545864
+javascript.js:7 
+       country : Canada
+       region : Americas
+       subregion : Northern America
+       population : 38005238
+javascript.js:7 
+       country : Cabo Verde
+       region : Africa
+       subregion : Western Africa
+       population : 555988
+javascript.js:7 
+       country : Cayman Islands
+       region : Americas
+       subregion : Caribbean
+       population : 65720
+javascript.js:7 
+       country : Central African Republic
+       region : Africa
+       subregion : Middle Africa
+       population : 4829764
+javascript.js:7 
+       country : Chad
+       region : Africa
+       subregion : Middle Africa
+       population : 16425859
+javascript.js:7 
+       country : Chile
+       region : Americas
+       subregion : South America
+       population : 19116209
+javascript.js:7 
+       country : China
+       region : Asia
+       subregion : Eastern Asia
+       population : 1402112000
+javascript.js:7 
+       country : Christmas Island
+       region : Oceania
+       subregion : Australia and New Zealand
+       population : 2072
+javascript.js:7 
+       country : Cocos (Keeling) Islands
+       region : Oceania
+       subregion : Australia and New Zealand
+       population : 550
+javascript.js:7 
+       country : Colombia
+       region : Americas
+       subregion : South America
+       population : 50882884
+javascript.js:7 
+       country : Comoros
+       region : Africa
+       subregion : Eastern Africa
+       population : 869595
+javascript.js:7 
+       country : Congo
+       region : Africa
+       subregion : Middle Africa
+       population : 5518092
+javascript.js:7 
+       country : Congo (Democratic Republic of the)
+       region : Africa
+       subregion : Middle Africa
+       population : 89561404
+javascript.js:7 
+       country : Cook Islands
+       region : Oceania
+       subregion : Polynesia
+       population : 18100
+javascript.js:7 
+       country : Costa Rica
+       region : Americas
+       subregion : Central America
+       population : 5094114
+javascript.js:7 
+       country : Croatia
+       region : Europe
+       subregion : Southern Europe
+       population : 4047200
+javascript.js:7 
+       country : Cuba
+       region : Americas
+       subregion : Caribbean
+       population : 11326616
+javascript.js:7 
+       country : Curaçao
+       region : Americas
+       subregion : Caribbean
+       population : 155014
+javascript.js:7 
+       country : Cyprus
+       region : Europe
+       subregion : Southern Europe
+       population : 1207361
+javascript.js:7 
+       country : Czech Republic
+       region : Europe
+       subregion : Central Europe
+       population : 10698896
+javascript.js:7 
+       country : Denmark
+       region : Europe
+       subregion : Northern Europe
+       population : 5831404
+javascript.js:7 
+       country : Djibouti
+       region : Africa
+       subregion : Eastern Africa
+       population : 988002
+javascript.js:7 
+       country : Dominica
+       region : Americas
+       subregion : Caribbean
+       population : 71991
+javascript.js:7 
+       country : Dominican Republic
+       region : Americas
+       subregion : Caribbean
+       population : 10847904
+javascript.js:7 
+       country : Ecuador
+       region : Americas
+       subregion : South America
+       population : 17643060
+javascript.js:7 
+       country : Egypt
+       region : Africa
+       subregion : Northern Africa
+       population : 102334403
+javascript.js:7 
+       country : El Salvador
+       region : Americas
+       subregion : Central America
+       population : 6486201
+javascript.js:7 
+       country : Equatorial Guinea
+       region : Africa
+       subregion : Middle Africa
+       population : 1402985
+javascript.js:7 
+       country : Eritrea
+       region : Africa
+       subregion : Eastern Africa
+       population : 5352000
+javascript.js:7 
+       country : Estonia
+       region : Europe
+       subregion : Northern Europe
+       population : 1331057
+javascript.js:7 
+       country : Ethiopia
+       region : Africa
+       subregion : Eastern Africa
+       population : 114963583
+javascript.js:7 
+       country : Falkland Islands (Malvinas)
+       region : Americas
+       subregion : South America
+       population : 2563
+javascript.js:7 
+       country : Faroe Islands
+       region : Europe
+       subregion : Northern Europe
+       population : 48865
+javascript.js:7 
+       country : Fiji
+       region : Oceania
+       subregion : Melanesia
+       population : 896444
+javascript.js:7 
+       country : Finland
+       region : Europe
+       subregion : Northern Europe
+       population : 5530719
+javascript.js:7 
+       country : France
+       region : Europe
+       subregion : Western Europe
+       population : 67391582
+javascript.js:7 
+       country : French Guiana
+       region : Americas
+       subregion : South America
+       population : 254541
+javascript.js:7 
+       country : French Polynesia
+       region : Oceania
+       subregion : Polynesia
+       population : 280904
+javascript.js:7 
+       country : French Southern Territories
+       region : Africa
+       subregion : Southern Africa
+       population : 140
+javascript.js:7 
+       country : Gabon
+       region : Africa
+       subregion : Middle Africa
+       population : 2225728
+javascript.js:7 
+       country : Gambia
+       region : Africa
+       subregion : Western Africa
+       population : 2416664
+javascript.js:7 
+       country : Georgia
+       region : Asia
+       subregion : Western Asia
+       population : 3714000
+javascript.js:7 
+       country : Germany
+       region : Europe
+       subregion : Central Europe
+       population : 83240525
+javascript.js:7 
+       country : Ghana
+       region : Africa
+       subregion : Western Africa
+       population : 31072945
+javascript.js:7 
+       country : Gibraltar
+       region : Europe
+       subregion : Southern Europe
+       population : 33691
+javascript.js:7 
+       country : Greece
+       region : Europe
+       subregion : Southern Europe
+       population : 10715549
+javascript.js:7 
+       country : Greenland
+       region : Americas
+       subregion : Northern America
+       population : 56367
+javascript.js:7 
+       country : Grenada
+       region : Americas
+       subregion : Caribbean
+       population : 112519
+javascript.js:7 
+       country : Guadeloupe
+       region : Americas
+       subregion : Caribbean
+       population : 400132
+javascript.js:7 
+       country : Guam
+       region : Oceania
+       subregion : Micronesia
+       population : 168783
+javascript.js:7 
+       country : Guatemala
+       region : Americas
+       subregion : Central America
+       population : 16858333
+javascript.js:7 
+       country : Guernsey
+       region : Europe
+       subregion : Northern Europe
+       population : 62999
+javascript.js:7 
+       country : Guinea
+       region : Africa
+       subregion : Western Africa
+       population : 13132792
+javascript.js:7 
+       country : Guinea-Bissau
+       region : Africa
+       subregion : Western Africa
+       population : 1967998
+javascript.js:7 
+       country : Guyana
+       region : Americas
+       subregion : South America
+       population : 786559
+javascript.js:7 
+       country : Haiti
+       region : Americas
+       subregion : Caribbean
+       population : 11402533
+javascript.js:7 
+       country : Heard Island and McDonald Islands
+       region : Antarctic
+       subregion : Antarctic
+       population : 0
+javascript.js:7 
+       country : Vatican City
+       region : Europe
+       subregion : Southern Europe
+       population : 451
+javascript.js:7 
+       country : Honduras
+       region : Americas
+       subregion : Central America
+       population : 9904608
+javascript.js:7 
+       country : Hungary
+       region : Europe
+       subregion : Central Europe
+       population : 9749763
+javascript.js:7 
+       country : Hong Kong
+       region : Asia
+       subregion : Eastern Asia
+       population : 7481800
+javascript.js:7 
+       country : Iceland
+       region : Europe
+       subregion : Northern Europe
+       population : 366425
+javascript.js:7 
+       country : India
+       region : Asia
+       subregion : Southern Asia
+       population : 1380004385
+javascript.js:7 
+       country : Indonesia
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 273523621
+javascript.js:7 
+       country : Ivory Coast
+       region : Africa
+       subregion : Western Africa
+       population : 26378275
+javascript.js:7 
+       country : Iran (Islamic Republic of)
+       region : Asia
+       subregion : Southern Asia
+       population : 83992953
+javascript.js:7 
+       country : Iraq
+       region : Asia
+       subregion : Western Asia
+       population : 40222503
+javascript.js:7 
+       country : Ireland
+       region : Europe
+       subregion : Northern Europe
+       population : 4994724
+javascript.js:7 
+       country : Isle of Man
+       region : Europe
+       subregion : Northern Europe
+       population : 85032
+javascript.js:7 
+       country : Israel
+       region : Asia
+       subregion : Western Asia
+       population : 9216900
+javascript.js:7 
+       country : Italy
+       region : Europe
+       subregion : Southern Europe
+       population : 59554023
+javascript.js:7 
+       country : Jamaica
+       region : Americas
+       subregion : Caribbean
+       population : 2961161
+javascript.js:7 
+       country : Japan
+       region : Asia
+       subregion : Eastern Asia
+       population : 125836021
+javascript.js:7 
+       country : Jersey
+       region : Europe
+       subregion : Northern Europe
+       population : 100800
+javascript.js:7 
+       country : Jordan
+       region : Asia
+       subregion : Western Asia
+       population : 10203140
+javascript.js:7 
+       country : Kazakhstan
+       region : Asia
+       subregion : Central Asia
+       population : 18754440
+javascript.js:7 
+       country : Kenya
+       region : Africa
+       subregion : Eastern Africa
+       population : 53771300
+javascript.js:7 
+       country : Kiribati
+       region : Oceania
+       subregion : Micronesia
+       population : 119446
+javascript.js:7 
+       country : Kuwait
+       region : Asia
+       subregion : Western Asia
+       population : 4270563
+javascript.js:7 
+       country : Kyrgyzstan
+       region : Asia
+       subregion : Central Asia
+       population : 6591600
+javascript.js:7 
+       country : Lao People's Democratic Republic
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 7275556
+javascript.js:7 
+       country : Latvia
+       region : Europe
+       subregion : Northern Europe
+       population : 1901548
+javascript.js:7 
+       country : Lebanon
+       region : Asia
+       subregion : Western Asia
+       population : 6825442
+javascript.js:7 
+       country : Lesotho
+       region : Africa
+       subregion : Southern Africa
+       population : 2142252
+javascript.js:7 
+       country : Liberia
+       region : Africa
+       subregion : Western Africa
+       population : 5057677
+javascript.js:7 
+       country : Libya
+       region : Africa
+       subregion : Northern Africa
+       population : 6871287
+javascript.js:7 
+       country : Liechtenstein
+       region : Europe
+       subregion : Central Europe
+       population : 38137
+javascript.js:7 
+       country : Lithuania
+       region : Europe
+       subregion : Northern Europe
+       population : 2794700
+javascript.js:7 
+       country : Luxembourg
+       region : Europe
+       subregion : Western Europe
+       population : 632275
+javascript.js:7 
+       country : Macao
+       region : Asia
+       subregion : Eastern Asia
+       population : 649342
+javascript.js:7 
+       country : North Macedonia
+       region : Europe
+       subregion : Southern Europe
+       population : 2083380
+javascript.js:7 
+       country : Madagascar
+       region : Africa
+       subregion : Eastern Africa
+       population : 27691019
+javascript.js:7 
+       country : Malawi
+       region : Africa
+       subregion : Eastern Africa
+       population : 19129955
+javascript.js:7 
+       country : Malaysia
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 32365998
+javascript.js:7 
+       country : Maldives
+       region : Asia
+       subregion : Southern Asia
+       population : 540542
+javascript.js:7 
+       country : Mali
+       region : Africa
+       subregion : Western Africa
+       population : 20250834
+javascript.js:7 
+       country : Malta
+       region : Europe
+       subregion : Southern Europe
+       population : 525285
+javascript.js:7 
+       country : Marshall Islands
+       region : Oceania
+       subregion : Micronesia
+       population : 59194
+javascript.js:7 
+       country : Martinique
+       region : Americas
+       subregion : Caribbean
+       population : 378243
+javascript.js:7 
+       country : Mauritania
+       region : Africa
+       subregion : Western Africa
+       population : 4649660
+javascript.js:7 
+       country : Mauritius
+       region : Africa
+       subregion : Eastern Africa
+       population : 1265740
+javascript.js:7 
+       country : Mayotte
+       region : Africa
+       subregion : Eastern Africa
+       population : 226915
+javascript.js:7 
+       country : Mexico
+       region : Americas
+       subregion : North America
+       population : 128932753
+javascript.js:7 
+       country : Micronesia (Federated States of)
+       region : Oceania
+       subregion : Micronesia
+       population : 115021
+javascript.js:7 
+       country : Moldova (Republic of)
+       region : Europe
+       subregion : Eastern Europe
+       population : 2617820
+javascript.js:7 
+       country : Monaco
+       region : Europe
+       subregion : Western Europe
+       population : 39244
+javascript.js:7 
+       country : Mongolia
+       region : Asia
+       subregion : Eastern Asia
+       population : 3278292
+javascript.js:7 
+       country : Montenegro
+       region : Europe
+       subregion : Southern Europe
+       population : 621718
+javascript.js:7 
+       country : Montserrat
+       region : Americas
+       subregion : Caribbean
+       population : 4922
+javascript.js:7 
+       country : Morocco
+       region : Africa
+       subregion : Northern Africa
+       population : 36910558
+javascript.js:7 
+       country : Mozambique
+       region : Africa
+       subregion : Eastern Africa
+       population : 31255435
+javascript.js:7 
+       country : Myanmar
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 54409794
+javascript.js:7 
+       country : Namibia
+       region : Africa
+       subregion : Southern Africa
+       population : 2540916
+javascript.js:7 
+       country : Nauru
+       region : Oceania
+       subregion : Micronesia
+       population : 10834
+javascript.js:7 
+       country : Nepal
+       region : Asia
+       subregion : Southern Asia
+       population : 29136808
+javascript.js:7 
+       country : Netherlands
+       region : Europe
+       subregion : Western Europe
+       population : 17441139
+javascript.js:7 
+       country : New Caledonia
+       region : Oceania
+       subregion : Melanesia
+       population : 271960
+javascript.js:7 
+       country : New Zealand
+       region : Oceania
+       subregion : Australia and New Zealand
+       population : 5084300
+javascript.js:7 
+       country : Nicaragua
+       region : Americas
+       subregion : Central America
+       population : 6624554
+javascript.js:7 
+       country : Niger
+       region : Africa
+       subregion : Western Africa
+       population : 24206636
+javascript.js:7 
+       country : Nigeria
+       region : Africa
+       subregion : Western Africa
+       population : 206139587
+javascript.js:7 
+       country : Niue
+       region : Oceania
+       subregion : Polynesia
+       population : 1470
+javascript.js:7 
+       country : Norfolk Island
+       region : Oceania
+       subregion : Australia and New Zealand
+       population : 2302
+javascript.js:7 
+       country : Korea (Democratic People's Republic of)
+       region : Asia
+       subregion : Eastern Asia
+       population : 25778815
+javascript.js:7 
+       country : Northern Mariana Islands
+       region : Oceania
+       subregion : Micronesia
+       population : 57557
+javascript.js:7 
+       country : Norway
+       region : Europe
+       subregion : Northern Europe
+       population : 5379475
+javascript.js:7 
+       country : Oman
+       region : Asia
+       subregion : Western Asia
+       population : 5106622
+javascript.js:7 
+       country : Pakistan
+       region : Asia
+       subregion : Southern Asia
+       population : 220892331
+javascript.js:7 
+       country : Palau
+       region : Oceania
+       subregion : Micronesia
+       population : 18092
+javascript.js:7 
+       country : Palestine, State of
+       region : Asia
+       subregion : Western Asia
+       population : 4803269
+javascript.js:7 
+       country : Panama
+       region : Americas
+       subregion : Central America
+       population : 4314768
+javascript.js:7 
+       country : Papua New Guinea
+       region : Oceania
+       subregion : Melanesia
+       population : 8947027
+javascript.js:7 
+       country : Paraguay
+       region : Americas
+       subregion : South America
+       population : 7132530
+javascript.js:7 
+       country : Peru
+       region : Americas
+       subregion : South America
+       population : 32971846
+javascript.js:7 
+       country : Philippines
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 109581085
+javascript.js:7 
+       country : Pitcairn
+       region : Oceania
+       subregion : Polynesia
+       population : 56
+javascript.js:7 
+       country : Poland
+       region : Europe
+       subregion : Central Europe
+       population : 37950802
+javascript.js:7 
+       country : Portugal
+       region : Europe
+       subregion : Southern Europe
+       population : 10305564
+javascript.js:7 
+       country : Puerto Rico
+       region : Americas
+       subregion : Caribbean
+       population : 3194034
+javascript.js:7 
+       country : Qatar
+       region : Asia
+       subregion : Western Asia
+       population : 2881060
+javascript.js:7 
+       country : Republic of Kosovo
+       region : Europe
+       subregion : Eastern Europe
+       population : 1775378
+javascript.js:7 
+       country : Réunion
+       region : Africa
+       subregion : Eastern Africa
+       population : 840974
+javascript.js:7 
+       country : Romania
+       region : Europe
+       subregion : Eastern Europe
+       population : 19286123
+javascript.js:7 
+       country : Russian Federation
+       region : Europe
+       subregion : Eastern Europe
+       population : 144104080
+javascript.js:7 
+       country : Rwanda
+       region : Africa
+       subregion : Eastern Africa
+       population : 12952209
+javascript.js:7 
+       country : Saint Barthélemy
+       region : Americas
+       subregion : Caribbean
+       population : 9417
+javascript.js:7 
+       country : Saint Helena, Ascension and Tristan da Cunha
+       region : Africa
+       subregion : Western Africa
+       population : 4255
+javascript.js:7 
+       country : Saint Kitts and Nevis
+       region : Americas
+       subregion : Caribbean
+       population : 53192
+javascript.js:7 
+       country : Saint Lucia
+       region : Americas
+       subregion : Caribbean
+       population : 183629
+javascript.js:7 
+       country : Saint Martin (French part)
+       region : Americas
+       subregion : Caribbean
+       population : 38659
+javascript.js:7 
+       country : Saint Pierre and Miquelon
+       region : Americas
+       subregion : Northern America
+       population : 6069
+javascript.js:7 
+       country : Saint Vincent and the Grenadines
+       region : Americas
+       subregion : Caribbean
+       population : 110947
+javascript.js:7 
+       country : Samoa
+       region : Oceania
+       subregion : Polynesia
+       population : 198410
+javascript.js:7 
+       country : San Marino
+       region : Europe
+       subregion : Southern Europe
+       population : 33938
+javascript.js:7 
+       country : Sao Tome and Principe
+       region : Africa
+       subregion : Middle Africa
+       population : 219161
+javascript.js:7 
+       country : Saudi Arabia
+       region : Asia
+       subregion : Western Asia
+       population : 34813867
+javascript.js:7 
+       country : Senegal
+       region : Africa
+       subregion : Western Africa
+       population : 16743930
+javascript.js:7 
+       country : Serbia
+       region : Europe
+       subregion : Southern Europe
+       population : 6908224
+javascript.js:7 
+       country : Seychelles
+       region : Africa
+       subregion : Eastern Africa
+       population : 98462
+javascript.js:7 
+       country : Sierra Leone
+       region : Africa
+       subregion : Western Africa
+       population : 7976985
+javascript.js:7 
+       country : Singapore
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 5685807
+javascript.js:7 
+       country : Sint Maarten (Dutch part)
+       region : Americas
+       subregion : Caribbean
+       population : 40812
+javascript.js:7 
+       country : Slovakia
+       region : Europe
+       subregion : Central Europe
+       population : 5458827
+javascript.js:7 
+       country : Slovenia
+       region : Europe
+       subregion : Southern Europe
+       population : 2100126
+javascript.js:7 
+       country : Solomon Islands
+       region : Oceania
+       subregion : Melanesia
+       population : 686878
+javascript.js:7 
+       country : Somalia
+       region : Africa
+       subregion : Eastern Africa
+       population : 15893219
+javascript.js:7 
+       country : South Africa
+       region : Africa
+       subregion : Southern Africa
+       population : 59308690
+javascript.js:7 
+       country : South Georgia and the South Sandwich Islands
+       region : Americas
+       subregion : South America
+       population : 30
+javascript.js:7 
+       country : Korea (Republic of)
+       region : Asia
+       subregion : Eastern Asia
+       population : 51780579
+javascript.js:7 
+       country : Spain
+       region : Europe
+       subregion : Southern Europe
+       population : 47351567
+javascript.js:7 
+       country : Sri Lanka
+       region : Asia
+       subregion : Southern Asia
+       population : 21919000
+javascript.js:7 
+       country : Sudan
+       region : Africa
+       subregion : Northern Africa
+       population : 43849269
+javascript.js:7 
+       country : South Sudan
+       region : Africa
+       subregion : Middle Africa
+       population : 11193729
+javascript.js:7 
+       country : Suriname
+       region : Americas
+       subregion : South America
+       population : 586634
+javascript.js:7 
+       country : Svalbard and Jan Mayen
+       region : Europe
+       subregion : Northern Europe
+       population : 2562
+javascript.js:7 
+       country : Swaziland
+       region : Africa
+       subregion : Southern Africa
+       population : 1160164
+javascript.js:7 
+       country : Sweden
+       region : Europe
+       subregion : Northern Europe
+       population : 10353442
+javascript.js:7 
+       country : Switzerland
+       region : Europe
+       subregion : Central Europe
+       population : 8636896
+javascript.js:7 
+       country : Syrian Arab Republic
+       region : Asia
+       subregion : Western Asia
+       population : 17500657
+javascript.js:7 
+       country : Taiwan
+       region : Asia
+       subregion : Eastern Asia
+       population : 23503349
+javascript.js:7 
+       country : Tajikistan
+       region : Asia
+       subregion : Central Asia
+       population : 9537642
+javascript.js:7 
+       country : Tanzania, United Republic of
+       region : Africa
+       subregion : Eastern Africa
+       population : 59734213
+javascript.js:7 
+       country : Thailand
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 69799978
+javascript.js:7 
+       country : Timor-Leste
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 1318442
+javascript.js:7 
+       country : Togo
+       region : Africa
+       subregion : Western Africa
+       population : 8278737
+javascript.js:7 
+       country : Tokelau
+       region : Oceania
+       subregion : Polynesia
+       population : 1411
+javascript.js:7 
+       country : Tonga
+       region : Oceania
+       subregion : Polynesia
+       population : 105697
+javascript.js:7 
+       country : Trinidad and Tobago
+       region : Americas
+       subregion : Caribbean
+       population : 1399491
+javascript.js:7 
+       country : Tunisia
+       region : Africa
+       subregion : Northern Africa
+       population : 11818618
+javascript.js:7 
+       country : Turkey
+       region : Asia
+       subregion : Western Asia
+       population : 84339067
+javascript.js:7 
+       country : Turkmenistan
+       region : Asia
+       subregion : Central Asia
+       population : 6031187
+javascript.js:7 
+       country : Turks and Caicos Islands
+       region : Americas
+       subregion : Caribbean
+       population : 38718
+javascript.js:7 
+       country : Tuvalu
+       region : Oceania
+       subregion : Polynesia
+       population : 11792
+javascript.js:7 
+       country : Uganda
+       region : Africa
+       subregion : Eastern Africa
+       population : 45741000
+javascript.js:7 
+       country : Ukraine
+       region : Europe
+       subregion : Eastern Europe
+       population : 44134693
+javascript.js:7 
+       country : United Arab Emirates
+       region : Asia
+       subregion : Western Asia
+       population : 9890400
+javascript.js:7 
+       country : United Kingdom of Great Britain and Northern Ireland
+       region : Europe
+       subregion : Northern Europe
+       population : 67215293
+javascript.js:7 
+       country : United States of America
+       region : Americas
+       subregion : Northern America
+       population : 329484123
+javascript.js:7 
+       country : Uruguay
+       region : Americas
+       subregion : South America
+       population : 3473727
+javascript.js:7 
+       country : Uzbekistan
+       region : Asia
+       subregion : Central Asia
+       population : 34232050
+javascript.js:7 
+       country : Vanuatu
+       region : Oceania
+       subregion : Melanesia
+       population : 307150
+javascript.js:7 
+       country : Venezuela (Bolivarian Republic of)
+       region : Americas
+       subregion : South America
+       population : 28435943
+javascript.js:7 
+       country : Vietnam
+       region : Asia
+       subregion : South-Eastern Asia
+       population : 97338583
+javascript.js:7 
+       country : Wallis and Futuna
+       region : Oceania
+       subregion : Polynesia
+       population : 11750
+javascript.js:7 
+       country : Western Sahara
+       region : Africa
+       subregion : Northern Africa
+       population : 510713
+javascript.js:7 
+       country : Yemen
+       region : Asia
+       subregion : Western Asia
+       population : 29825968
+javascript.js:7 
+       country : Zambia
+       region : Africa
+       subregion : Eastern Africa
+       population : 18383956
+javascript.js:7 
+       country : Zimbabwe
+       region : Africa
+       subregion : Eastern Africa
+       population : 14862927
