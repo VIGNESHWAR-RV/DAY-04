@@ -1,0 +1,24 @@
+
+   "COMPARING TWO OBJECTS THAT HAVE SAME PROPERTIES AND VALUES BUT NOT IN ORDER"
+   
+We cant directly equal such objects though they have same properties since they are not in order.
+so inorder to check such objects , the best way is using nested loops to check if the property and its value matches
+ and also the number of matches equals the number of properties available in both objects.
+ 
+QUESTION :
+
+A) let obj1 = { name: "Person 1", age:5 };
+B) let obj2 = { age:5, name: "Person 1" };
+ 
+ 
+ ANSWER :
+ 
+let obj1 = { name: "Person 1", age:5 };
+let obj2 = { age:5, name: "Person 1" };
+let count = 0;
+for(let i in obj1){
+    for(let j in obj2){
+        if(i===j && obj1.i===obj2.j) count++;
+    }
+}
+(count=== Object.keys(obj1).length && count=== Object.keys(obj2).length) ?console.log('equal') :console.log('not equal');
