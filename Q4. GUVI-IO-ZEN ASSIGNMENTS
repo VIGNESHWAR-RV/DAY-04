@@ -1,0 +1,1156 @@
+
+  "DAY-4 guvi-io-zen assignments"
+  
+        Task 1: Simple Programs todo for variables
+
+1. Declare four variables without assigning values and print them in console.
+
+solution :
+
+ let a, b , c ,d;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  console.log(d);
+
+result:
+
+undefined
+undefined
+undefined
+undefined
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+2. How to get value of the variable myvar as output.
+
+var myvar= 1;
+console.log("myvar");
+
+solution :
+
+var myvar= 1;
+console.log(myvar);
+
+result:
+
+1
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+3.Declare variables to store your first name, last name, marital status, country and age in multiple lines.
+
+solution :
+
+var firstName;
+var lastName;
+var status;
+var country;
+var age;
+
+result : <!-- question is to only declare right? -->
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+4.Declare variables to store your first name, last name, marital status, country and age in a single line.
+
+solution :
+
+let firstName, lastName, status, country, age;
+
+result : <!-- question is to only declare right? -->
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+5. Declare variables and assign string, boolean, undefined and null data types.
+
+solution :
+
+let a = "RV";
+let b = true;
+let c; (or) let c = undefined;
+let d = null;
+
+result :  <!-- question is only to declare and initialize right? -->
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+6. Convert the string to integer
+
+I am 25 years old. 
+You are 30 years old.
+
+parseInt()
+Number()
+Plus sign(+)
+
+let a = parseInt("I am 25 years old");
+let b = Number("I am 25 years old");
+let c = +"I am 25 years old";
+
+let d = parseInt("You are 30 years old");
+let e = Number("you are 30 years old");
+let f = +"you are 30 years old";
+
+// only if numbers that are in string can be changed  to number again.
+ 
+ solution :
+ 
+console.log(parseInt("06"));
+console.log(Number("08"));
+console.log(+"1999");
+
+result :
+
+6
+8
+1999
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+7. Write 6 statement which provide truthy & falsey values.
+
+console.log(undefined===undefined); //true
+console.log(6<8); //true
+console.log(NaN!=NaN); //true
+console.log(5==="5"); //false
+console.log(5=="5"); //true
+console.log(null===null); //true
+
+let obj ={};
+let obj1 = {};
+console.log(obj===obj1); //false
+
+let a = [];
+let b = [];
+console.log(a===b); //false
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+
+             Task 2: Simple Programs todo for Operators
+
+1. Square of a number
+
+solution :
+
+let a = 6;
+console.log(a*a);
+console.log(Math.pow(6,2));
+
+result :
+
+36
+36
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+2. Swapping 2 numbers
+
+solution :
+ 
+i). 
+let num1 = 6;
+let num2 = 8;
+
+let temp = num1;
+num1 = num2;
+num2 = temp;
+
+console.log(num1); // 8
+console.log(num2); //6
+
+ii). 
+let number = 6;
+let number1 = 8;
+
+number = number+number1;
+number1 = number-number1;
+number = number-number1;
+
+console.log(number);  //8
+console.log(number1); //6
+
+iii). 
+let num1 = 6;
+let num2 = 8;
+
+num1 = num2+(num2=num1)-num2;
+
+console.log(num1); //8
+console.log(num2); //6
+
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+3.Addition of 3 numbers.
+
+solution:
+   let num1 = 6;
+   let num2 = 8;
+   let num3 = 6;
+   
+   let sum = num1+num2+num3;
+   
+   console.log(sum); //20
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+4.Celsius to Farenheit conversion.
+
+solution:
+
+     let farenheit = 96;
+	 
+	 let celsius = (farenheit-32)*(5/9);
+	 
+     console.log(celsius.toFixed(1)); //35.6
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+5.Meter to miles.
+
+solution:
+
+let meters = 666;
+let km = 666/1000;
+
+console.log(km+"km"); //0.666km
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+6.pounds to kg.
+ 
+solution:
+ 
+ let pounds = 6;
+ 
+ let kg = pounds/2.2046226;
+ 
+ console.log(`${kg.toFixed(3)} kg`); // 2.722 kg
+ 
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+7.calculate batting average.
+
+let runs = 66;
+let noOfBalls = 68;
+
+let battingAverage = runs/noOfBalls;
+
+console.log(battingAverage.toFixed(3)); //0.971
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+8.calculate five test scores and print their average.
+
+let test1Score = 4;
+let test2Score = 6;
+let test3Score = 8;
+let test4Score = 10;
+let test5Score = 12;
+
+let average = (test1Score+test2Score+test3Score+test4Score+test5Score)/5;
+
+console.log(average); //8
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+9.Power of any number x^y.
+
+let x = 6;
+let y = 8;
+
+let power = Math.pow(x,y);
+
+console.log(power); //1679616
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+10.calculate simple Interest.
+
+let principleAmount = 666;
+let rateOfInterest = 2;
+let time = 2;
+
+let SI = (principleAmount*rateOfInterest*time)/100;
+
+console.log(SI); //26.64
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+11.calculate area of equilateral triangle.
+
+let side = 6;
+
+let area = (1/4)*Math.pow(3,(1/2))*Math.pow(side,2);
+
+console.log(area.toFixed(3)); //15.588
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+12.Area of Isosceles Triangle.
+
+let height = 6;
+let base = 8;
+
+let area = ((1/2)*base*height);
+
+console.log(area); //24
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+13.volume of sphere.
+
+let radius = 6;
+
+let volume = (4/3)*Math.PI*Math.pow(radius,3);
+
+console.log(volume); //904.7787
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+14.volume of prism.
+
+let width = 6;
+let length = 10;
+let height = 6;
+
+
+let volume = ((1/2)*(6*10))*6;
+
+console.log(`${volume} cubic units`); //180 cubic units
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+15.Find area of triangle.
+
+let base = 6;
+let height = 8;
+
+let area = (1/2)*base*height;
+
+console.log(`${area} square units`); //24 square units 
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+16.Given the Actual Cost , Sold Cost . Calculate Discount of Product.
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+17.Given the radius of the circle. Find its dia,circumference and area.
+
+let radius = 6;
+
+let diameter = 2*radius;
+let circumference = 2*Math.PI*radius;
+let area = Math.PI * Math.pow(radius,2);
+
+console.log(`diameter of circle is ${diameter} , circumference of circle is ${circumference} and area of circle is ${area}`);
+
+//diameter of circle is 12 , circumference of circle is 37.70 and area of circle is 113.10
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+18.Given two numbers and perform all airthmatic operations. 
+
+let num1 = 6;
+let num2 = 8;
+
+let add = num2+num1;
+let sub = num2-num1;
+let div = num2/num1;
+let mul = num2*num1;
+
+console.log(add); //14
+console.log(sub); //2
+console.log(div); //1.333
+console.log(mul); //48
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+19.Display the asterik pattern as shown below (No loop needed):
+*****
+*****
+*****
+*****
+*****
+
+console.log(*****);
+console.log(*****);
+console.log(*****);
+console.log(*****);
+console.log(*****);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+20.Calculate electricity bill.
+    for example , a consumer consumes 100watts per hour daily for one month.
+	Calculate the total energy bill of that consumer if per unit rate is 10.
+	
+let total = 100*30;
+let cost = 10/1000;
+
+let bill = total * cost;
+
+console.log(bill);  //30
+	
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+21.program to calculate CGPA.
+
+let gradePoint1 = 6;
+let gradePoint2 = 6;
+let gradePoint3 = 6;
+let gradePoint4 = 6;
+let gradePoint5 = 6;
+let gradePoint6 = 6;
+
+let CGPA = (gradePoint1+gradePoint2+gradePoint3+gradePoint4+gradePoint5+gradePoint6)/6;
+
+console.log(CGPA);  //6
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+
+        Task 3: Simple Programs todo for Condition , Looping and Arrays
+
+1. Write a loop that makes seven calls to console.log to output the following triangle:
+
+#
+##
+###
+####
+#####
+######
+#######
+
+solution:
+
+  let a ="";
+   for(let i=0;i<7;i++){
+       a+="#";
+      console.log(a);
+	  }
+
+result :
+
+#
+##
+###
+####
+#####
+######
+#######
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+2. Iterate through the string array and print it contents.
+
+ var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"];
+	  
+solution:
+
+ var strArray= ["<option>Jazz</option>",
+      ,"<option>Blues</option>",
+      ,"<option>New Age</option>",
+      ,"<option>Classical</option>",
+      ,"<option>Opera</option>"];
+
+let list = [];
+for(let i=0;i<strArray.length;i++){
+    if(strArray[i]!==undefined){
+        
+        list.push(strArray[i]);
+    }
+}
+console.log(list);
+
+result:
+
+[ 'Jazz',
+  'Blues',
+  'New Age',
+  'Classical',
+  'Opera' ]
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+         <!--ARRAYS-->
+3.write a code to count the elements in the array . Don’t use length property.
+
+var myarray=[11,22,33,44,55];
+
+solution :
+   
+   var myarray=[11,22,33,44,55];
+   
+   let count = 0;
+   for(let i of myarray){
+     count++;
+	 }
+	console.log(count);  
+
+result :  
+
+      5
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+4.Create an array called foods holds the names of your top 20 favorite foods, starting with the best food.
+
+
+let foods = ["mango","grapes","pinapple","orange","apple","banana","pazhaya-soru","meen-kulambu","fish-fries","mutton","puzhi-kulambu","puzhicha-keerai"];
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+5.Foods variable holds the names of your top 20 favorite foods, starting with the best food. How can you find your fifth favorite food?
+
+solution:
+
+let foods = ["mango","grapes","pinapple","orange","apple","banana","pazhaya-soru","meen-kulambu","fish-fries","mutton","puzhi-kulambu","puzhicha-keerai"];
+
+console.log(foods[4]);
+
+console.log(foods.length);
+
+let i = 0;
+
+for(let j in foods){
+i++;
+}
+console.log(i);
+
+result:
+
+apple
+12
+12
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+6.Starting from the existing friends variable below, change the element that is currently “Mari” to “Munnabai”.
+
+let friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+<!--solution:-->
+
+let friends = [
+"Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
+];
+
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+  if(input[i]==="Mari") input[i]="Munnabai";
+  else if(input[i] ==="Munnabai") input[i]="Mari";
+}
+}
+dataHandling(friends)
+console.log(friends);
+
+<!--result:-->
+
+[ 'Munnabai',
+  'MaryJane',
+  'CaptianAmerica',
+  'Mari',
+  'Jeff',
+  'AAK chandran' ]
+  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+7.Starting from the friends variable below, Loop and Print the names till you meet CaptianAmerica.
+
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+<!--solution:-->
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+if (input[i]==="CaptianAmerica") break;
+else {console.log(input[i]);}
+}
+}
+dataHandling(friends);
+
+<!--result:-->
+
+Mari
+MaryJane
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+8.Find the person is ur friend or not.
+
+const friends = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+<!--solution-->
+
+function dataHandling(input, name){
+for (var i = 0; i < input.length; i++) {
+     if(name===input[i]) return "yes , he is my friend";
+}
+return "no , he is not my friend yet";
+}
+let found = dataHandling(friends,"Jeff");
+console.log(found);
+
+<!--result:-->
+
+yes , he is my friend
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+9.We have two lists of friends below. Use array methods to combine them into one alphabetically-sorted list.
+
+var friends1 = [
+“Mari”,
+“MaryJane”,
+“CaptianAmerica”,
+“Munnabai”,
+“Jeff”,
+“AAK chandran”
+];
+
+var friends2 = [
+“Gabbar”,
+“Rajinikanth”,
+“Mass”,
+“Spiderman”,
+“Jeff”,
+“ET”
+];
+
+<!--solution:-->
+
+let friends1 = [
+"Mari",
+"MaryJane",
+"CaptianAmerica",
+"Munnabai",
+"Jeff",
+"AAK chandran"
+];
+
+var friends2 = [
+"Gabbar",
+"Rajinikanth",
+"Mass",
+"Spiderman",
+"Jeff",
+"ET"
+];
+
+let friends = [];
+function dataHandling(input){
+  friends = friends1.concat(friends2);
+  friends.sort();
+}
+dataHandling(friends);
+
+console.log(friends);
+
+<!--result:-->
+
+[ 'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman' ]
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+10.Get the first item, the middle item and the last item of the array
+
+<!--solution-->
+
+let list = [10,20,30,40,50,60,70,80,90,100];
+
+let first = list[0];
+let last = list[list.length-1];
+let middle = list[Math.floor((list.length-1)/2)];
+
+console.log(first,middle,last);
+
+<!--result-->
+
+10 50 100
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+11.Add your name to the end of the friends array, and add another name to beginning.
+
+let friends = [ 'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman' ];
+  
+<!--solution-->
+
+friends.push("RV");
+friends.unshift("GV");
+
+console.log(friends);
+
+<!--result-->
+
+[ 'GV',
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman',
+  'RV' ]
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+12.Add Mr or Ms to the names in the friends array.
+
+let friends = [ 'GV',
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman',
+  'RV' ];
+  
+let list = [];
+for(let i of friends){
+if(i==="GV" || i==="MaryJane") i = "Ms."+i;
+else i="Mr."+i;
+ list.push(i);
+}
+
+console.log(list);
+
+<!--result-->
+
+[ 'Ms.GV',
+  'Mr.AAK chandran',
+  'Mr.CaptianAmerica',
+  'Mr.ET',
+  'Mr.Gabbar',
+  'Mr.Jeff',
+  'Mr.Jeff',
+  'Mr.Mari',
+  'Ms.MaryJane',
+  'Mr.Mass',
+  'Mr.Munnabai',
+  'Mr.Rajinikanth',
+  'Mr.Spiderman',
+  'Mr.RV' ]
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+13.Concat all the names the friends array and return as comma “,” seperated string.
+
+<!--solution-->
+
+let string = friends.join(",");
+ 
+console.log(string);
+
+<!--result-->
+
+AAK chandran,CaptianAmerica,ET,Gabbar,Jeff,Jeff,Mari,MaryJane,Mass,Munnabai,Rajinikanth,Spiderman,RV
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+14.Find the friends names who has letter ‘a’ and return the list.
+
+
+
+<!--solution-->
+
+let list = [];
+for(let i of friends){
+  let j=i.toLowerCase();
+  if(j.includes("a")) list.push(i);
+}
+
+console.log(list);
+
+<!--result-->
+
+[ 'AAK chandran',
+  'CaptianAmerica',
+  'Gabbar',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman' ]
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+15.Find the avg length of all the friends names. Get the individual length of the names and do the avg.
+
+let friends = [
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman',
+  'RV' ];
+  
+<!--solution-->
+
+let k = 0;
+for(let i of friends){
+   let j = i.length;
+   console.log(`the length of ${i} is ${j}`);
+   k += j;
+}
+let avg = k/(friends.length-1);
+console.log(`total letters is ${k} and the average is ${avg.toFixed(2)}`);
+
+<!--result-->
+
+the length of AAK chandran is 12
+the length of CaptianAmerica is 14
+the length of ET is 2
+the length of Gabbar is 6
+the length of Jeff is 4
+the length of Jeff is 4
+the length of Mari is 4
+the length of MaryJane is 8
+the length of Mass is 4
+the length of Munnabai is 8
+the length of Rajinikanth is 11
+the length of Spiderman is 9
+the length of RV is 2
+total letters is 88 and the average is 7.33
+  
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+16. Find the names and return the list starting with letter M.
+
+let friends = [
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman',
+  'RV' ];
+  
+<!--solution-->
+
+let list=[];
+for(let i of friends){
+let j=i.toUpperCase();
+if(j.startsWith("M")) list.push(i);
+}
+console.log(list);
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+17.Find the name with max characters and return the name.
+
+let friends = [
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman',
+  'RV' ];
+  
+<!--solution-->
+
+let max=0;
+let name = "";
+for(let i of friends){
+   for(let j of i){
+    if(j===(" ")) i=i.split(j).join("");
+	}
+  if (i.length > max){ 
+        max=i.length;
+        name = i;
+		}
+  }
+  console.log(`the name is ${name} with maximum letter of ${max}`);
+
+<!--result-->
+
+  the name is CaptianAmerica with maximum letter of 1
+  
+ 
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+18.Find the name with min characters and return the name.
+
+let friends = [
+  'AAK chandran',
+  'CaptianAmerica',
+  'ET',
+  'Gabbar',
+  'Jeff',
+  'Jeff',
+  'Mari',
+  'MaryJane',
+  'Mass',
+  'Munnabai',
+  'Rajinikanth',
+  'Spiderman'];
+
+<!--solution-->
+
+let min=50;
+let name = "";
+for(let i of friends){
+   for(let j of i){
+    if(j===(" ")) i=i.split(j).join("");
+	}
+  if (i.length < min){ 
+        min=i.length;
+        name = i;
+		}
+  }
+  console.log(`the name is ${name} with maximum letter of ${min}`);
+
+<!--result-->
+
+the name is ET with maximum letter of 2
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+19.Find the average in the array below.
+Make sure you add only the numbers and do avg.
+
+const friendsInfo = [6, 12, ‘Mari’, 1, true, ‘Munnabai’, ‘200’, ‘CaptianAmerica’, 8, 10];
+
+<!--solution-->
+
+const friendsInfo = [6, 12, 'Mari', 1, true, 'Munnabai', '200', 'CaptianAmerica', 8, 10];
+
+let total = 0;
+let count = 0;
+for(let i of friendsInfo){
+if(typeof(i)==="number") {
+      total += i;
+	  count++;
+  }
+}
+let avg = total/count;
+
+console.log(avg);
+
+<!--result-->
+
+      7.4
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+20.Print the contents of the input variable.
+
+var input = [
+[“0001”, “Roman Alamsyah”, “Bandar Lampung”, “21/05/1989”, “Membaca”],
+[“0002”, “Dika Sembiring”, “Medan”, “10/10/1992”, “Bermain Gitar”],
+[“0003”, “Winona”, “Ambon”, “25/12/1965”, “Memasak”],
+[“0004”, “Bintang Senjaya”, “Martapura”, “6/4/1970”, “Berkebun”]
+];
+
+<!--solution-->
+
+var input = [
+['0001', 'Roman Alamsyah', 'Bandar Lampung', '21/05/1989', 'Membaca'],
+['0002', 'Dika Sembiring', 'Medan', '10/10/1992', 'Bermain Gitar'],
+['0003', 'Winona', 'Ambon', '25/12/1965', 'Memasak'],
+['0004', 'Bintang Senjaya', 'Martapura', '6/4/1970', 'Berkebun']
+];
+
+function dataHandling(input){
+for (var i = 0; i < input.length; i++) {
+  for(let j of input[i]){
+   console.log(j);
+  }
+ }
+}
+dataHandling(input);
+
+<!--result-->
+
+0001
+Roman Alamsyah
+Bandar Lampung
+21/05/1989
+Membaca
+0002
+Dika Sembiring
+Medan
+10/10/1992
+Bermain Gitar
+0003
+Winona
+Ambon
+25/12/1965
+Memasak
+0004
+Bintang Senjaya
+Martapura
+6/4/1970
+Berkebun
+
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+Objects
+1.What the output
+
+myobject = {1:one,”11":1,”name”:”arun”}
+console.log(myobject.11); 
+console.log(myobject.name);
+
+result :  
+       SyntaxError  // console.log(myobject['11']);  which gives 1 as output 
+	   arun
+
+2.Add a new key value pair to myobject
+key : ten
+value : ten
+
+<!--solution-->
+
+myobject={1:one,"11":1,"name":"arun"};
+
+myobject.ten = "ten";
+
+console.log(myobject);
+
+<!--result-->
+
+{ '1': 'one', '11': 1, name: 'arun', ten: 'ten' }
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+3.Write out an object literal to represent the data below.
+
+let guviteam = {"guvi":"geek","address":[6,"IIT-M RP","Chennai"]};
+
+console.log(guviteam);
+
+<!--result-->
+
+{ guvi: 'geek', address: [ 6, 'IIT-M RP', 'Chennai' ] }
+
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
+
+4.How would you represent the following data using a combination of object literals and arrays? (You can describe a strategy without typing or writing out the whole thing.)
+
+Guvi, Geek, 6, IIT-M RP,Chennai.
+Amazon, Inc, 31, SP Infocity, Chennai.
+Google, Alphabet, 34 Amphitheater Parkway, MountainView.
+Tesla, Inc , 32, 333 Santana Row,San Jose.
+
+<!--solution-->
+
+let companies = {
+         "guvi":["geek",6,"IIT-M RP","Chennai"],
+		 "amazon":["Inc",31,"SP Infocity","Chennai"],
+		 "google":["Alphabet","34 Amphitheater Parkway","MountainView"],
+		 "Tesla":["Inc",32,"333 Santana Row","San Jose"]};
+		 
+		 console.log(companies);
+		 
+<!--result-->
+
+   { guvi: [ 'geek', 6, 'IIT-M RP', 'Chennai' ],
+  amazon: [ 'Inc', 31, 'SP Infocity', 'Chennai' ],
+  google: [ 'Alphabet', '34 Amphitheater Parkway', 'MountainView' ],
+  Tesla: [ 'Inc', 32, '333 Santana Row', 'San Jose' ] }
+  
+X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X
